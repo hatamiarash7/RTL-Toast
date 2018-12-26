@@ -1,0 +1,19 @@
+<resources>
+	<string name="app_name">RTL-Toast Sample</string>
+	<string name="normal_toast_with_icon">پیغام عادی با آیکون</string>
+	<string name="normal_toast_without_icon">پیغام عادی بدون آیکون</string>
+	<string name="warning_toast">پیغام هشدار</string>
+	<string name="info_toast">پیغام اطلاع رسانی</string>
+	<string name="info_toast_with_formatting">پیغام همراه با فرمت</string>
+	<string name="error_toast">پیغام خطا</string>
+	<string name="success_toast">پیغام موفقیت</string>
+	<string name="custom_configuration">تنظیمات دلخواه</string>
+
+	<string name="error_message">مشکلی به وجود آمده است</string>
+	<string name="success_message">سلام !</string>
+	<string name="info_message">خوش آمدید</string>
+	<string name="warning_message">ایمیل را بررسی نمایید</string>
+	<string name="normal_message_without_icon">پیغام بدون آیکون</string>
+	<string name="normal_message_with_icon">پیغام با آیکون</string>
+	<string name="custom_message">شخصی سازی شده</string>
+</resources>

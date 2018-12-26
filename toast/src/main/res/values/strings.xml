@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">RTL-Toast</string>
+	<string name="toast_message">Toast message</string>
+</resources>
