@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018. Arash Hatami
+ */
+
 package ir.hatamiarash.toast_sample;
 
 import android.graphics.Color;
@@ -84,8 +88,7 @@ public class MainActivity extends AppCompatActivity {
 		final String suffix = " مخصوص";
 		SpannableStringBuilder ssb = new SpannableStringBuilder(prefix).append(highlight).append(suffix);
 		int prefixLen = prefix.length();
-		ssb.setSpan(new StyleSpan(BOLD_ITALIC),
-				prefixLen, prefixLen + highlight.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		ssb.setSpan(new StyleSpan(BOLD_ITALIC), prefixLen, prefixLen + highlight.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 		return ssb;
 	}
 }

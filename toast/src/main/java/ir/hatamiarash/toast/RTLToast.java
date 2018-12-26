@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018. Arash Hatami
+ */
+
 package ir.hatamiarash.toast;
 
 import android.annotation.SuppressLint;
@@ -72,26 +76,22 @@ public class RTLToast {
 	}
 	
 	@CheckResult
-	public static Toast normal(@NonNull Context context, @StringRes int message, int duration,
-	                           Drawable icon) {
+	public static Toast normal(@NonNull Context context, @StringRes int message, int duration, Drawable icon) {
 		return normal(context, context.getString(message), duration, icon, true);
 	}
 	
 	@CheckResult
-	public static Toast normal(@NonNull Context context, @NonNull CharSequence message, int duration,
-	                           Drawable icon) {
+	public static Toast normal(@NonNull Context context, @NonNull CharSequence message, int duration, Drawable icon) {
 		return normal(context, message, duration, icon, true);
 	}
 	
 	@CheckResult
-	public static Toast normal(@NonNull Context context, @StringRes int message, int duration,
-	                           Drawable icon, boolean withIcon) {
+	public static Toast normal(@NonNull Context context, @StringRes int message, int duration, Drawable icon, boolean withIcon) {
 		return custom(context, context.getString(message), icon, NORMAL_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
-	public static Toast normal(@NonNull Context context, @NonNull CharSequence message, int duration,
-	                           Drawable icon, boolean withIcon) {
+	public static Toast normal(@NonNull Context context, @NonNull CharSequence message, int duration, Drawable icon, boolean withIcon) {
 		return custom(context, message, icon, NORMAL_COLOR, duration, withIcon, true);
 	}
 	
@@ -117,14 +117,12 @@ public class RTLToast {
 	
 	@CheckResult
 	public static Toast warning(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
-		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_error_outline_white_48dp),
-				WARNING_COLOR, duration, withIcon, true);
+		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_error_outline_white_48dp), WARNING_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
 	public static Toast warning(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
-		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_error_outline_white_48dp),
-				WARNING_COLOR, duration, withIcon, true);
+		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_error_outline_white_48dp), WARNING_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
@@ -149,14 +147,12 @@ public class RTLToast {
 	
 	@CheckResult
 	public static Toast info(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
-		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_info_outline_white_48dp),
-				INFO_COLOR, duration, withIcon, true);
+		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_info_outline_white_48dp), INFO_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
 	public static Toast info(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
-		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_info_outline_white_48dp),
-				INFO_COLOR, duration, withIcon, true);
+		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_info_outline_white_48dp), INFO_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
@@ -181,14 +177,12 @@ public class RTLToast {
 	
 	@CheckResult
 	public static Toast success(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
-		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_check_white_48dp),
-				SUCCESS_COLOR, duration, withIcon, true);
+		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_check_white_48dp), SUCCESS_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
 	public static Toast success(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
-		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_check_white_48dp),
-				SUCCESS_COLOR, duration, withIcon, true);
+		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_check_white_48dp), SUCCESS_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
@@ -213,75 +207,63 @@ public class RTLToast {
 	
 	@CheckResult
 	public static Toast error(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
-		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_clear_white_48dp),
-				ERROR_COLOR, duration, withIcon, true);
+		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, R.drawable.ic_clear_white_48dp), ERROR_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
 	public static Toast error(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
-		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_clear_white_48dp),
-				ERROR_COLOR, duration, withIcon, true);
+		return custom(context, message, RTLToastUtils.getDrawable(context, R.drawable.ic_clear_white_48dp), ERROR_COLOR, duration, withIcon, true);
 	}
 	
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @StringRes int message, Drawable icon,
-	                           int duration, boolean withIcon) {
+	public static Toast custom(@NonNull Context context, @StringRes int message, Drawable icon, int duration, boolean withIcon) {
 		return custom(context, context.getString(message), icon, -1, duration, withIcon, false);
 	}
 	
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, Drawable icon,
-	                           int duration, boolean withIcon) {
+	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, Drawable icon, int duration, boolean withIcon) {
 		return custom(context, message, icon, -1, duration, withIcon, false);
 	}
 	
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @StringRes int message, @DrawableRes int iconRes,
-	                           @ColorInt int tintColor, int duration,
-	                           boolean withIcon, boolean shouldTint) {
-		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, iconRes),
-				tintColor, duration, withIcon, shouldTint);
+	public static Toast custom(@NonNull Context context, @StringRes int message, @DrawableRes int iconRes, @ColorInt int tintColor, int duration, boolean withIcon, boolean shouldTint) {
+		return custom(context, context.getString(message), RTLToastUtils.getDrawable(context, iconRes), tintColor, duration, withIcon, shouldTint);
 	}
 	
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, @DrawableRes int iconRes,
-	                           @ColorInt int tintColor, int duration,
-	                           boolean withIcon, boolean shouldTint) {
-		return custom(context, message, RTLToastUtils.getDrawable(context, iconRes),
-				tintColor, duration, withIcon, shouldTint);
+	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, @DrawableRes int iconRes, @ColorInt int tintColor, int duration, boolean withIcon, boolean shouldTint) {
+		return custom(context, message, RTLToastUtils.getDrawable(context, iconRes), tintColor, duration, withIcon, shouldTint);
 	}
 	
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @StringRes int message, Drawable icon,
-	                           @ColorInt int tintColor, int duration,
-	                           boolean withIcon, boolean shouldTint) {
-		return custom(context, context.getString(message), icon, tintColor, duration,
-				withIcon, shouldTint);
+	public static Toast custom(@NonNull Context context, @StringRes int message, Drawable icon, @ColorInt int tintColor, int duration, boolean withIcon, boolean shouldTint) {
+		return custom(context, context.getString(message), icon, tintColor, duration, withIcon, shouldTint);
 	}
 	
 	@SuppressLint("ShowToast")
 	@CheckResult
-	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, Drawable icon,
-	                           @ColorInt int tintColor, int duration,
-	                           boolean withIcon, boolean shouldTint) {
+	public static Toast custom(@NonNull Context context, @NonNull CharSequence message, Drawable icon, @ColorInt int tintColor, int duration, boolean withIcon, boolean shouldTint) {
 		final Toast currentToast = Toast.makeText(context, "", duration);
-		final View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
-				.inflate(R.layout.toast_layout, null);
+		final View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.toast_layout, null);
 		final ImageView toastIcon = toastLayout.findViewById(R.id.toast_icon);
 		final TextView toastTextView = toastLayout.findViewById(R.id.toast_text);
 		Drawable drawableFrame;
 		
-		if (shouldTint)
+		if (shouldTint) {
 			drawableFrame = RTLToastUtils.tint9PatchDrawableFrame(context, tintColor);
-		else
+		} else {
 			drawableFrame = RTLToastUtils.getDrawable(context, R.drawable.toast_frame);
+		}
 		RTLToastUtils.setBackground(toastLayout, drawableFrame);
 		
 		if (withIcon) {
-			if (icon == null)
+			if (icon == null) {
 				throw new IllegalArgumentException("Avoid passing 'icon' as null if 'withIcon' is set to true");
-			if (tintIcon)
-				icon = RTLToastUtils.tintIcon(icon, DEFAULT_TEXT_COLOR);
+			}
+			{
+				if (tintIcon)
+					icon = RTLToastUtils.tintIcon(icon, DEFAULT_TEXT_COLOR);
+			}
 			RTLToastUtils.setBackground(toastIcon, icon);
 		} else {
 			toastIcon.setVisibility(View.GONE);

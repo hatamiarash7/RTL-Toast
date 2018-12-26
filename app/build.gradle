@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018. Arash Hatami
+ */
+
 apply plugin: 'com.android.application'
 
 android {
@@ -6,8 +10,8 @@ android {
 		applicationId "ir.hatamiarash.toast_sample"
 		minSdkVersion 16
 		targetSdkVersion 28
-		versionCode 1
-		versionName "1.0"
+		versionCode 2
+		versionName "1.1"
 	}
 	buildTypes {
 		release {

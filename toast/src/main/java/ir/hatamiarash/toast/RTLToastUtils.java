@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2018. Arash Hatami
+ */
+
 package ir.hatamiarash.toast;
 
 import android.content.Context;
