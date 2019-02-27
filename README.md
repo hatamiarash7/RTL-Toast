@@ -5,16 +5,18 @@ A library to show Toasts in a pretty RTL way.
 
 ### Install
 Add it in your root build.gradle
-```css
+```java
 allprojects {
     repositories {
         ...
-	maven { url 'https://jitpack.io' }
+	maven {
+	    url 'https://jitpack.io'
+	}
     }
 }
 ```
 Add the dependency
-```css
+```java
 dependencies {
     implementation 'com.github.hatamiarash7:RTL-Toast:1.2'
 }
