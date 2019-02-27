@@ -47,7 +47,7 @@ private CharSequence getFormattedMessage() {
 ```
 
 Or you can customize your toast with `RTLToast.Config`
-```
+```java
 RTLToast.Config.getInstance()  
     .setTextColor(Color.GREEN)  
     .setToastTypeface(Typeface.createFromAsset(getAssets(), "IRANSans.ttf"))  
