@@ -8,11 +8,12 @@
 	package="ir.hatamiarash.toast_sample">
 
 	<application
-		android:allowBackup="true"
+		android:allowBackup="false"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
 		android:supportsRtl="false"
 		android:theme="@style/AppTheme">
+
 		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
