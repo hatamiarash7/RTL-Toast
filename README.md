@@ -3,6 +3,8 @@
 
 A library to show Toasts in a pretty RTL way.
 
+![ScreenShot](./assets/template.jpg)
+
 ### Install
 Add it in your root build.gradle
 ```java
