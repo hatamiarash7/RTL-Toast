@@ -1,5 +1,7 @@
 ## RTL-Toast
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RTL%20Toast-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7695)
+
 A library to show Toasts in a pretty RTL way
 
 ![ScreenShot](./assets/template.jpg)
