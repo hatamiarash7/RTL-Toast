@@ -2,7 +2,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RTL%20Toast-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7695) ![JitPack](https://img.shields.io/jitpack/v/github/hatamiarash7/rtl-toast.svg) [![GitHub license](https://img.shields.io/github/license/hatamiarash7/RTL-Toast.svg)](https://github.com/hatamiarash7/RTL-Toast/blob/master/LICENSE)
 
-A library to show Toasts in a pretty RTL way
+Android library to show Toasts in a pretty RTL way
 
 ![ScreenShot](./assets/template.jpg)
 
