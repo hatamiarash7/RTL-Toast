@@ -21,7 +21,7 @@ allprojects {
 Add the dependency
 ```java
 dependencies {
-    implementation 'com.github.hatamiarash7:RTL-Toast:1.2'
+    implementation 'com.github.hatamiarash7:RTL-Toast:1.3'
 }
 ```
 
