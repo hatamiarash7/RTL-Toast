@@ -1,6 +1,6 @@
 ## RTL-Toast
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RTL%20Toast-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7695) ![JitPack](https://img.shields.io/jitpack/v/github/hatamiarash7/rtl-toast.svg) [![GitHub license](https://img.shields.io/github/license/hatamiarash7/RTL-Toast.svg)](https://github.com/hatamiarash7/RTL-Toast/blob/master/LICENSE) [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RTL%20Toast-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7695) [![](https://jitpack.io/v/hatamiarash7/RTL-Toast.svg)](https://jitpack.io/#hatamiarash7/RTL-Toast) [![GitHub license](https://img.shields.io/github/license/hatamiarash7/RTL-Toast.svg)](https://github.com/hatamiarash7/RTL-Toast/blob/master/LICENSE) [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhatamiarash7%2FRTL-Toast.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhatamiarash7%2FRTL-Toast?ref=badge_shield)
 
 Android library to show Toasts in a pretty RTL way
